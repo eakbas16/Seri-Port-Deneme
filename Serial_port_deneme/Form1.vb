@@ -60,7 +60,7 @@ Public Class Form1
         End If
 
 
-        If SerialPort1.IsOpen = True Then
+        If SerialPort2.IsOpen = True Then
             If SerialPort2.BytesToRead > 0 Then
                 Dim rcv_len As Integer = SerialPort2.Read(rcv_byte, 0, rcv_byte.Length)
                 Label2.Text = rcv_len
